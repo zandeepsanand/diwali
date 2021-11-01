@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        /* If you wish to remove the astonish.js file, then also be sure to remove these styles. */
+        .astonish {
+            visibility: visible;
+        }
+
+        @media (min-width: 768px) {
+            .astonish {
+                visibility: hidden;
+            }
+
+            .animated {
+                visibility: visible;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="/css/home.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!-- Main Navigation -->
+    <nav class="main-nav" id="main-nav">
+        <div class="content-wrapper-sm">
+            <a href="#" class="navbar-brand">Hi, <%=name%></a>
+            <div id="menu-button">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#reserve">Descriptions</a></li>
+                <li><a href="#contact">messenger</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main header -->
+    <header>
+        <!-- First replaceble image -->
+        <img class="img-absolute" src="https://drive.google.com/uc?export=view&id=1-PlenJqkonqGoRqNKFsYfJTf6PSD0G3n"
+            alt="City 1">
+        <div class="wrapper astonish animated fadeInDown">
+            <br>
+            <h1><strong>Happy</strong>Diwali</h1>
+
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="content-wrapper" id="about">
+            <!-- second replaceble image -->
+            <img class="img-absolute" src="https://drive.google.com/uc?export=view&id=1_VzjtGRdLoJDNi0LpVmyyVXuOJiq7kqR"
+                alt="City 2">
+            <div class="grid">
+                <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
+                    <h2 class="section-title">ദീപാവലി
+                    </h2>
+                    <p>ദീപാവലി അറിയപ്പെടുന്നത് തന്നെ ദീപങ്ങളുടെ ഉത്സവം എന്നാണ്. രാജ്യത്തുടനീളം ദീപാവലി
+                        ആഘോഷിക്കപ്പെടുന്നുണ്ട്. ദീപങ്ങളുടെ നിര
+                        എന്നാണ് ദീപാവലിയുടെ അര്‍ത്ഥം. </p>
+                    <p>എന്നു മുതലാണ് ദീപാവലി ആഘോഷിക്കാന്‍ തുടങ്ങിയത്. തുലാംമാസത്തിലെ അമാവാസി ദിവസമാണ് ദീപാവലി
+                        ആഘോഷിക്കുന്നത്. ദീപങ്ങളുടെ ഉത്സവമായതുകൊണ്ട് തന്നെ അതിനെ ദീപാവലി എന്ന് വിളിക്കുന്നതും.</p>
+                    <p> മണ്‍ചെരാതുകളില്‍ വിളക്ക് കത്തിച്ചും പടക്കം പൊട്ടിച്ചും ദീപാവലി ആഘോഷിക്കപ്പെടുന്നു.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
+            <h2 class="section-title">Diwali: Festival of Lights</h2>
+            <p>Diwali, or Dipawali, is India's biggest and most important holiday of the year. The festival gets its
+                name from the row
+                (avali) of clay lamps (deepa) that Indians light outside their homes to symbolize the inner light that
+                protects from
+                spiritual darkness. This festival is as important to Hindus as the Christmas holiday is to Christians.
+
+            </p>
+            <a href="#about" class="btn btn-outline-purple" target="_blank">Know more</a>
+        </div>
+
+        <div class="content-wrapper" id="contact">
+            <!-- Third replaceble image -->
+            <img class="img-absolute" src="https://c.tadst.com/gfx/750w/istock-454353339.jpg" alt="City 3">
+
+            <!-- Custom form, important note: you will need additional code in order to make this form work -->
+            <form id="mailform"  class="contact-form astonish" method="post" data-animation="fadeInRight">
+                <h2 class="section-title"> Messenger</h2>
+                <div class="grid">
+                    <div class="grid-col-sm-12 grid-col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="firstName">Your Name:</label>
+                        </div>
+                    </div>
+                    <div class="grid-col-sm-12 grid-col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="wname" name="wname" required>
+                            <label for="lasttName">Friend Name:</label>
+                        </div>
+                    </div>
+                    <div class="grid-col-sm-12">
+                        <div class="form-group">
+                            <input type="text" id="email" name="email" required>
+                            <label for="email">Email:</label>
+                        </div>
+                    </div>
+                    <div class="grid-col-sm-12">
+                        <div class="form-group">
+                            <textarea name="message" id="message" required></textarea>
+                            <label for="message">Message:</label>
+                        </div>
+                    </div>
+                </div>
+                <input class="btn btn-outline-teal" type="submit" value="Send">
+            </form>
+        </div>
+
+        <!-- This is an embedded Google map, this is easily customizable especially if you get a Google API key, this will allow for more customizable features. -->
+        <!-- <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d81584.50435706123!2d-80.8378430874413!3d35.23358937843391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1514142608486" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    </main>
+
+    <!-- Main footer -->
+    <footer>
+        <div class="content-wrapper-sm display-flex-between">
+            <!-- Easily replaceble copyright information -->
+            <small>zandeep copyright 2021.</small>
+
+            <!-- Make sure to edit the links so that they go to your social media. -->
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- partial -->
+    <!-- <script src="/js/script.js"></script> -->
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/astonish.js'></script>
+    <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/menu.js'></script>
+    <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/nav.js'></script>
+    <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/scroll.js'></script>
+   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('#mailform').submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: '/mail',
+                method: 'POST',
+                data: {
+                    name: $('#name').val(),
+                    wname:$('#wname').val(),
+                    email: $('#email').val(),
+                    message: $('#message').val(),
+                },
+                success: (response) => {
+                    console.log(response);
+                    if (response.success) {
+                        alert("Mail Sent Successfully to "+response.name);
+                        location.reload();
+                    } else {
+                        alert("Failed to Sent Mail");
+                        window.location.href = '/home';
+                    }
+                },
+                error: (response) => {
+                    alert("Try Again");
+                }
+
+            })
+
+        })
+    </script>
+    mongodb+srv://diwali:<password>@diwaliwish.in15p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+</body>
+
+</html>
