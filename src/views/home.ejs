@@ -100,7 +100,7 @@
                 <div class="grid">
                     <div class="grid-col-sm-12 grid-col-md-6">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" value="<%=name%>" required>
                             <label for="firstName">Your Name:</label>
                         </div>
                     </div>
@@ -116,12 +116,12 @@
                             <label for="email">Email:</label>
                         </div>
                     </div>
-                    <div class="grid-col-sm-12">
+                    <!-- <div class="grid-col-sm-12">
                         <div class="form-group">
                             <textarea name="message" id="message" required></textarea>
                             <label for="message">Message:</label>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <input class="btn btn-outline-teal" type="submit" value="Send">
             </form>
@@ -178,7 +178,7 @@
                         location.reload();
                     } else {
                         alert("Failed to Sent Mail");
-                        window.location.href = '/home';
+                        location.reload();
                     }
                 },
                 error: (response) => {
