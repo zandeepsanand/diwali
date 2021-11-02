@@ -63,8 +63,7 @@ app.post('/mail', function (req, res) {
     var item = {
         name: req.body.name,
         wname: req.body.wname,
-        email: req.body.email,
-
+        email: req.body.email
     }
     var diwali = diwaliData(item);
     diwali.save().then((response) => {
@@ -93,6 +92,7 @@ app.post('/mail', function (req, res) {
             if (err) {
                 console.log(err);
                 res.json({ success: false });
+                
                 console.log('Error Occurs! Bad Request');
             } else {
                 res.json({ success: true, name: response.wname });
@@ -100,7 +100,7 @@ app.post('/mail', function (req, res) {
                 console.log('Email sent successfully');
             }
         });
-    }) // saving to database
+    }) 
 
   
 });
