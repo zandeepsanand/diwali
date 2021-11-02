@@ -54,7 +54,8 @@
         <div class="wrapper astonish animated fadeInDown">
             <br>
             <h1><strong>Happy</strong>Diwali</h1>
-
+            <h2>wishes From<br>
+                <%=wname%></h2>
         </div>
     </header>
 
@@ -95,7 +96,7 @@
             <img class="img-absolute" src="https://c.tadst.com/gfx/750w/istock-454353339.jpg" alt="City 3">
 
             <!-- Custom form, important note: you will need additional code in order to make this form work -->
-            <form id="mailform"  class="contact-form astonish" method="post" data-animation="fadeInRight">
+            <form id="mailform" class="contact-form astonish" method="post" data-animation="fadeInRight">
                 <h2 class="section-title"> Messenger</h2>
                 <div class="grid">
                     <div class="grid-col-sm-12 grid-col-md-6">
@@ -116,7 +117,7 @@
                             <label for="email">Email:</label>
                         </div>
                     </div>
-                   
+
                 </div>
                 <input class="btn btn-outline-teal" type="submit" value="Send">
             </form>
@@ -145,14 +146,14 @@
     </footer>
     <!-- partial -->
     <!-- <script src="/js/script.js"></script> -->
-   
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/astonish.js'></script>
     <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/menu.js'></script>
     <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/nav.js'></script>
     <script src='https://rawgit.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/js/scroll.js'></script>
-   
-   
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $('#mailform').submit((e) => {
@@ -162,14 +163,14 @@
                 method: 'POST',
                 data: {
                     name: $('#name').val(),
-                    wname:$('#wname').val(),
+                    wname: $('#wname').val(),
                     email: $('#email').val(),
                     message: $('#message').val(),
                 },
                 success: (response) => {
                     console.log(response);
                     if (response.success) {
-                        alert("Mail Sent Successfully to "+response.name);
+                        alert("Mail Sent Successfully to " + response.name);
                         location.reload();
                     } else {
                         alert("Failed to Sent Mail");
@@ -184,6 +185,6 @@
 
         })
     </script>
-   </body>
+</body>
 
 </html>
