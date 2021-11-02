@@ -96,6 +96,7 @@ app.post('/mail', function (req, res) {
                 console.log('Error Occurs! Bad Request');
             } else {
                 res.json({ success: true, name: response.wname });
+                
     
                 console.log('Email sent successfully');
             }
