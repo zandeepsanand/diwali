@@ -47,7 +47,10 @@ app.get('/home/:id', function (req, res) {
 
         console.log(data);
 
-        res.render("home", { name: data.wname })
+        res.render("home1", {
+            name: data.name,
+            wname: data.wname
+        })
 
 
     })

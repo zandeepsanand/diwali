@@ -32,7 +32,7 @@
     <!-- Main Navigation -->
     <nav class="main-nav" id="main-nav">
         <div class="content-wrapper-sm">
-            <a href="#" class="navbar-brand">Hi, <%=name%></a>
+            <a href="#" class="navbar-brand">Hi, <%=wname%></a>
             <div id="menu-button">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -54,8 +54,9 @@
         <div class="wrapper astonish animated fadeInDown">
             <br>
             <h1><strong>Happy</strong>Diwali</h1>
-            <h2>Do you want to send a wish to  <br>
-                <%=wname%></h2>
+            <h2>wishes From<br>
+                <%=name%>
+            </h2>
         </div>
     </header>
 
@@ -101,13 +102,13 @@
                 <div class="grid">
                     <div class="grid-col-sm-12 grid-col-md-6">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" value="<%=name%>" required>
+                            <input type="text" id="name" name="name" value="<%=wname%>" required>
                             <label for="firstName">Your Name:</label>
                         </div>
                     </div>
                     <div class="grid-col-sm-12 grid-col-md-6">
                         <div class="form-group">
-                            <input type="text" id="wname" name="wname" value="<%=wname%>" required>
+                            <input type="text" id="wname" name="wname" required>
                             <label for="lasttName">Friend Name:</label>
                         </div>
                     </div>
