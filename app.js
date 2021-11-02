@@ -29,9 +29,11 @@ app.get('/', (req, res) => {
 });
 app.get('/home', (req, res) => {
     let name = req.query.name;
+    let wname = req.query.wname;
     res.render("home", {
         title: 'Happy Diwali',
-        name: name
+        name: name,
+        wname:wname
     });
 });
 
